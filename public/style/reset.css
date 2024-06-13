@@ -1,8 +1,10 @@
 :root{
   --color-navy: #192655;
   --color-blue: #3876BF;
-  --color-orange: #E1AA74;
+  --color-orange: #FF9F00;
   --color-beige: #F3F0CA;
+  --color-black: #111111;
+  --color-white: #FFFFFF;
 
   font-size: 62.5%;
 }
@@ -21,4 +23,9 @@ body {
   margin: 0;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-orange);
+}
+
+ul {
+  list-style-type: none;
 }
