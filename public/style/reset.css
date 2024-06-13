@@ -1,0 +1,24 @@
+:root{
+  --color-navy: #192655;
+  --color-blue: #3876BF;
+  --color-orange: #E1AA74;
+  --color-beige: #F3F0CA;
+
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
