@@ -22,6 +22,12 @@ app.set('layout', 'layouts/main');
 
 // Routes
 app.use('/', require('./server/routes/index'));
+app.use('/dashboard', require('./server/routes/dashboard'));
+
+// Handling 404 Error
+app.get('*', (req, res) => {
+  res.status(404).render('404');
+});
 
 app.listen(PORT, () => {
   console.log(`Note Keeping App running on http://localhost:${PORT}`);

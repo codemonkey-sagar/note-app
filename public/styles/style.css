@@ -16,6 +16,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
 }
 
 .nav__logo >img {
@@ -31,6 +32,15 @@ header {
 .nav__links ul {
   display: flex;
   gap: 2rem;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: var(--color-navy);
+}
+
+.nav__links a:hover {
+  color: var(--color-black);
 }
 
 .nav__auth {
@@ -93,6 +103,85 @@ header {
   color: var(--color-white);
   background-color: var(--color-navy);
 } 
+
+/* Page Not Found  */
+.page_not_found  {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  border-radius: 1rem;
+  background-color: var(--color-beige);
+}
+
+.page_not_found img {
+  padding: 5rem;
+  height: 60vh;
+}
+
+/* Under Construction  */
+
+.message {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.message::first-letter {
+  font-size: 3.2rem;
+  color: var(--color-navy);
+}
+
+.under_construction {
+  display: flex;
+  justify-content: center;
+  margin: 0 5rem 5rem;
+  border-radius: 1rem;
+  background-color: var(--color-beige);
+}
+
+.under_construction img {
+  padding: 5rem;
+  height: 60vh;
+}
+
+/* About Page  */
+
+#about-section {
+  background-color: var(--color-beige);
+}
+
+.about {
+  display: flex;
+  padding: 8rem 0;
+  gap: 4rem;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.picture img {
+  height: 60vh;
+  border: 2px solid var(--color-navy);
+  border-radius: 1rem;
+}
+
+.information  dt{
+  font-weight: 500;
+}
+
+.information dd {
+  font-style: italic;
+}
+
+.information p {
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--color-orange);
+  background-color: var(--color-white);
+}
+
+.information p::first-letter {
+  font-size: 2rem;
+}
 
 /* ---------Footer------------- */
 footer {
