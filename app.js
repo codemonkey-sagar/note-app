@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Connect to DB
-connectDB();
+// Connect to DB (Commenting for now)
+// connectDB();
 
 // Serving static files in express
 app.use(express.static('public'));
