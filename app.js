@@ -22,7 +22,7 @@ app.set('layout', 'layouts/main');
 
 // Routes
 app.use('/', require('./server/routes/index'));
-app.use('/dashboard', require('./server/routes/dashboard'));
+app.use('/', require('./server/routes/dashboard'));
 
 // Handling 404 Error
 app.get('*', (req, res) => {
