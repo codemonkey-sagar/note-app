@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const expressEjsLayouts = require('express-ejs-layouts');
+const connectDB = require('./server/config/db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,6 +10,9 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON bodies and URL-encoded bodies
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Connect to DB
+connectDB();
 
 // Serving static files in express
 app.use(express.static('public'));
